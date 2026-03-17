@@ -1,5 +1,8 @@
 name: GitHub Actions Basic Flow
-on: [push]
+# on: [push]
+on: 
+  push:
+  workflow_dispatch: # This allows manual triggering
 jobs:
   Basic-workflow:
     runs-on: ubuntu-latest
