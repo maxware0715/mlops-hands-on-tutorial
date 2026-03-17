@@ -65,7 +65,7 @@ def main(cfg):
         monitor="valid/loss", patience=3, verbose=True, mode="min"
     )
 
-    wandb_logger = WandbLogger(project="MLOps Hands on Tutorial", entity="mzeynali")
+    wandb_logger = WandbLogger(project="MLOps Hands on Tutorial", entity="maxware0715-national-taiwan-university")
     trainer = pl.Trainer(
         max_epochs=cfg.training.max_epochs,
         logger=wandb_logger,
