@@ -17,6 +17,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    # --- 必須加入這一步 ---
+    - name: Build Docker Image
+      run: |
+        # 進入正確的工作目錄（根據你之前的 defaults 設定）
+        cd week-7-ecr 
+        docker build -t mlops-hands-on-tutorial:latest .
+
     - name: Push2ECR
       id: ecr
       uses: jwalton/gh-ecr-push@v1
