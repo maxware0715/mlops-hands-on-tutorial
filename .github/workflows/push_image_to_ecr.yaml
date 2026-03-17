@@ -19,7 +19,6 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        cd week-7-ecr 
         docker build -t mlops-hands-on-tutorial:latest .
 
     - name: Push2ECR
