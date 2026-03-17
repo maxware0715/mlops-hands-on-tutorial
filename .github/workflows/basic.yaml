@@ -1,5 +1,7 @@
 name: GitHub Actions Basic Flow
-on: [push]
+# on: [push]
+on: 
+  push:
 jobs:
   Basic-workflow:
     runs-on: ubuntu-latest
